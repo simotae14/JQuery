@@ -1,0 +1,172 @@
+/*******************************************
+ GENERAL 
+******************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+body {
+
+	font-family: 'Josefin Sans', sans-serif;
+	color: #A69C7B;
+	
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+
+/*******************************************
+HEADER
+******************************************/
+
+
+.main-header {
+	position: relative;
+	background-color: #F3EACC;
+	padding: 5px;
+	text-align: center;
+}
+
+.top-logo {
+	width: 40px;
+}
+
+
+
+/*******************************************
+SEC HEADER
+******************************************/
+
+.secondary-header {
+	margin-bottom: 30px;
+	text-align: center;
+
+}
+
+h1, h2 {
+	color: #A69C7B;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+
+
+/*******************************************
+SECTION
+******************************************/
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 40px 5% 40px 5%;
+}
+
+
+
+/*******************************************
+BANNER
+******************************************/
+
+.banner {
+	padding: 160px 20px;
+	text-align: center;
+}
+
+.slide1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../img/bilancio.jpg) no-repeat center / cover;
+}
+.slide2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../img/linkedin.jpg) no-repeat center / cover;
+}
+.slide3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../img/html-css.jpg) no-repeat center / cover;
+}
+
+.banner p {
+	font-size: 1.4em;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+
+
+.corso {
+	vertical-align: middle;
+}
+
+.corso h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.corso h2 {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+.corso button {
+  padding: 10px 50px 10px 50px;
+  color: #FFF;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  border: none;
+  width: 85%;
+  max-width: 430px;
+  margin-bottom: 10px;
+  background: #6FC17B;
+}
+
+
+/*******************************************
+SLICK
+******************************************/
+/* sposto dentro l'immagine i puntini */
+.slick-dots {
+	bottom: 10px;
+}
+
+/* do colore bianco ai puntini, selettore recuperato grazie a Dev Tool*/
+.slick-dots li button:before {
+	font-size: 15px;
+	color: white;
+}
+
+/* do colore anche a quello attivo */
+.slick-dots li.slick-active button:before {
+	color: white;
+}
+
+/*******************************************
+SLICK ARROWS
+******************************************/
+.slick-prev:before, .slick-next:before {
+	font-size: 30px;
+}
+/* le sposto dentro l'immagine */
+.slick-prev {
+	left: 25px;
+	z-index: 1000;
+}
+
+.slick-next {
+	right: 25px;
+}
